@@ -1,0 +1,517 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="nav navbar-nav ml-auto">
+        <li class="nav-item active">
+            <button class="btn btn-danger">
+                <a class="nav-link" href="/">Logout</a>
+            </button>
+        
+        </li>
+        <li class="nav-item active">
+            <button class="btn btn-primary">
+                <a class="nav-link" href="/adminselect">Go Back</a>
+            </button>
+        
+        </li>
+        </ul>
+        </div>
+        <div class="title">
+            <h1>WELCOME &nbsp; <span style="color: red;">admin</span></h1> 
+        </div>
+        </div>
+        </nav>
+
+    <form action="/submit" method="POST" id="myForm" enctype="multipart/form-data">
+    
+      
+
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="STUDENT">Name</label>
+                    <input type="text" class="form-control" id="STUDENT" name="STUDENT" placeholder="Enter name">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Title">Title</label>
+                    <input type="text" class="form-control" id="Title" name="Title" placeholder="Enter Mr/ms">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Initial">Initial</label>
+                    <input type="text" class="form-control" id="Initial" name="Initial" placeholder="Enter Intial">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="StudentEmail">StudentEmail</label>
+                    <input type="email" class="form-control" id="StudentEmail" name="StudentEmail" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Rollno">Rollno</label>
+                    <input type="text" class="form-control" id="Rollno" name="Rollno" placeholder="Enter Student Rollno">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="DEPARTMENT">DEPARTMENT</label>
+                    <input type="text" class="form-control" id="DEPARTMENT" name="DEPARTMENT" placeholder="Enter DEPARTMENT">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="BG">bloodgroup</label>
+                    <input type="text" class="form-control" id="BG" name="BG" placeholder="Enter Blood group">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="BoardingPoint">BoardingPoint</label>
+                    <input type="text" class="form-control" id="BoardingPoint" name="BoardingPoint" placeholder="Enter BoardingPoint">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="BusNumber">BusNumber</label>
+                    <input type="text" class="form-control" id="BusNumber" name="BusNumber" placeholder="Enter BusNumber">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Caste">	Caste</label>
+                    <input type="text" class="form-control" id="Caste" name="Caste" placeholder="Enter Caste">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Community">	Community</label>
+                    <input type="text" class="form-control" id="Community" name="Community" placeholder="Enter Community">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Dateofjoin">Date of Birth</label>
+                    <input type="date" class="form-control" id="DOB" name="DOB" placeholder="">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Cutoff">Cutoff</label>
+                    <input type="text" class="form-control" id="Cutoff" name="Cutoff" placeholder="Enter 12th cutoff">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Physics">Physics</label>
+                    <input type="text" class="form-control" id="Physics" name="Physics" placeholder="Enter Physics mark in 12th">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Chemistry">Chemistry</label>
+                    <input type="text" class="form-control" id="Chemistry" name="Chemistry" placeholder="Enter Chemistry mark in 12th"">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Maths">Maths</label>
+                    <input type="text" class="form-control" id="Maths" name="Maths" placeholder="Enter maths mark in 12th ">
+                </div>
+            </div>
+            <div class="col-md-2"> 
+                <label for="DayScholarorHostel">date scholoar or hostelor</label>
+                <div class="form-group">
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="DayScholarorHostel" id="flexRadioDefault1" value="Dayscholoar">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Day scholoar
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="DayScholarorHostel" id="flexRadioDefault2" value="hostelor">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      Hostelor
+                    </label>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Dateofjoin">Date of join</label>
+                    <input type="date" class="form-control" id="Dateofjoin" name="Dateofjoin" placeholder="">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Identification">Identification</label>
+                    <input type="text" class="form-control" id="Identification" name="Identification" placeholder="(ex:scar in hand,mole in hand)">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="ExtraActivities">Extra Activities</label>
+                    <input type="text" class="form-control" id="ExtraActivities" name="ExtraActivities" placeholder="EX:football,sport">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Gender">Gender</label>
+                    <input type="text" class="form-control" id="Gender" name="Gender" placeholder="Enter Gender">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherTongue">Mother Tongue</label>
+                    <input type="text" class="form-control" id="MotherTongue" name="MotherTongue" placeholder="Enter Mother tounge">
+                </div>
+            </div>
+            <div class="col-md-2"> 
+                <label for="VegorNonveg">Veg or Nonveg</label>
+                <div class="form-group" aria-required="true">
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="VegorNonveg" id="flexRadioDefault1" value="VEG" >
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      VEG
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="VegorNonveg" id="flexRadioDefault2" value="NONVEG">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      NON VEG
+                    </label>
+                  </div>
+                </div>
+            </div>
+            <div class="col-md-2"> 
+                <label for="PhysicallyHandicapped" style="margin: -5px;;">Physically Handicapped</label>
+                <div class="form-group" required>
+                    <div class="form-check">
+                    <input class="form-check-input" type="radio" name="PhysicallyHandicapped" id="flexRadioDefault1" value="YES">
+                    <label class="form-check-label" for="flexRadioDefault1">
+                      Yes
+                    </label>
+                  </div>
+                  <div class="form-check">
+                    <input class="form-check-input" type="radio" name="PhysicallyHandicapped" id="flexRadioDefault2" value="NO">
+                    <label class="form-check-label" for="flexRadioDefault2">
+                      NO
+                    </label>
+                  </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Medium">Overall Medium</label>
+                    <input type="text" class="form-control" id="Medium" name="Medium" placeholder="Enter Overall Medium">
+                </div>
+            </div>
+           
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="AadharNo">Aadar Number</label>
+                    <input type="text" class="form-control" id="AadharNo" name="AadharNo" placeholder="Enter Aadar Number">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="StudentMobile">Student Phone Number</label>
+                    <input type="text" class="form-control" id="StudentMobile" name="StudentMobile" placeholder="Enter Phone Number">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="RELIGION">RELIGION</label>
+                    <input type="text" class="form-control" id="RELIGION" name="RELIGION" placeholder="Enter RELIGION">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Placeofbirth">place of birth</label>
+                    <input type="text" class="form-control" id="Placeofbirth" name="Placeofbirth" placeholder="Enter Placeofbirth">
+                </div>
+            </div>
+
+        <div class="row">
+            
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="tenthpercentage">10 percentage</label>
+                    <input type="text" class="form-control" id="tenthpercentage" name="tenthpercentage" placeholder="Enter 10th%">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="tenthMarks">10 Marks</label>
+                    <input type="text" class="form-control" id="tenthMarks" name="tenthMarks" placeholder="Enter l0th mark">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="School">10th school</label>
+                    <input type="text" class="form-control" id="School" name="School" placeholder="Enter 10th school">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="Tenthpassed">Tenth passed year</label>
+                    <input type="text" class="form-control" id="Tenthpassed" name="Tenthpassed" placeholder="Enter 10th year of pass">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="twelthpercent">12th percentage</label>
+                    <input type="text" class="form-control" id="twelthpercent" name="twelthpercent" placeholder="Enter 12th percentage">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="twelthmarks">12 mark</label>
+                    <input type="text" class="form-control" id="twelthmarks" name="twelthmarks" placeholder="Enter 12th mark">
+                </div>
+            </div>
+            <div class="col-md-3">
+                <div class="form-group">
+                    <label for="twelthschool">12th school</label>
+                    <input type="text" class="form-control" id="twelthschool" name="twelthschool" placeholder="Enter 12th school">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="twelthPassed">12th passed year</label>
+                    <input type="text" class="form-control" id="twelthPassed" name="twelthPassed" placeholder="Enter 12th passed year">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Diploma">Diploma</label>
+                    <input type="text" class="form-control" id="Diploma" name="Diploma" placeholder="Enter if any Diploma">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="diplonacollege">diplona college</label>
+                    <input type="text" class="form-control" id="diplonacollege" name="diplonacollege" placeholder="Enter if any diploma ">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="Diplomayear">Diploma year</label>
+                    <input type="text" class="form-control" id="Diplomayear" name="Diplomayear" placeholder="Enter if any diploma">
+                </div>
+            </div>
+        </div>
+
+
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="FatherName">Father Name</label>
+                    <input type="text" class="form-control" id="FatherName" name="FatherName" placeholder="Enter Father name">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="FatherQualification">Father Qualification</label>
+                    <input type="text" class="form-control" id="FatherQualification" name="FatherQualification" placeholder="Enter Father Qualification">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="FatherOccupation">Father Occupation</label>
+                    <input type="text" class="form-control" id="FatherOccupation" name="FatherOccupation" placeholder="Enter Father Occupation">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="FatherMobile">Father Mobile</label>
+                    <input type="text" class="form-control" id="FatherMobile" name="FatherMobile" placeholder="Enter father Mobile">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="FatherEmail">Father Email</label>
+                    <input type="email" class="form-control" id="FatherEmail" name="FatherEmail" placeholder="Enter father email">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="FatherIncome">Father Income</label>
+                    <input type="text" class="form-control" id="FatherIncome" name="FatherIncome" placeholder="Enter father income">
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherName">Mother Name</label>
+                    <input type="text" class="form-control" id="MotherName" name="MotherName" placeholder="Enter mother  name">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherQualification">Mother Qualification</label>
+                    <input type="text" class="form-control" id="MotherQualification" name="MotherQualification" placeholder="Enter mother Qualification">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherOccupation">Mother Occupation</label>
+                    <input type="text" class="form-control" id="MotherOccupation" name="MotherOccupation" placeholder="Enter mother Occupation">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherMobile">Mother Mobile</label>
+                    <input type="text" class="form-control" id="MotherMobile" name="MotherMobile" placeholder="Enter MotherMobile">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherEmail">Mother Email</label>
+                    <input type="email" class="form-control" id="MotherEmail" name="MotherEmail" placeholder="Enter mother email">
+                </div>
+            </div>
+            <div class="col-md-2">
+                <div class="form-group">
+                    <label for="MotherIncome">Mother Income</label>
+                    <input type="email" class="form-control" id="MotherIncome" name="MotherIncome" placeholder="Enter mother income">
+                </div>
+            </div>
+        </div>
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="GuardianName">GuardianName</label>
+                    <input type="text" class="form-control" id="GuardianName" name="GuardianName" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="GuardianMobile">Guardian Mobile</label>
+                    <input type="text" class="form-control" id="GuardianMobile" name="GuardianMobile" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="GuardianAddress">Guardian Address</label>
+                    <input type="text" class="form-control" id="GuardianAddress" name="GuardianAddress" placeholder="Enter email">
+                </div>
+            </div>
+            
+        </div>
+
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="PermanentAddressLine1">Permanent Address Line1</label>
+                    <input type="text" class="form-control" id="PermanentAddressLine1" name="PermanentAddressLine1" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="PermanentAddressLine2">Permanent Address Line2</label>
+                    <input type="text" class="form-control" id="PermanentAddressLine2" name="PermanentAddressLine2" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="PermanentAddressLine3">Permanent Address Line3</label>
+                    <input type="text" class="form-control" id="PermanentAddressLine3" name="PermanentAddressLine3" placeholder="Enter email">
+                </div>
+            </div>
+        </div>
+
+
+        <div class="row">
+            
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="CommunicationAddressLine1">Communication Address Line1</label>
+                    <input type="text" class="form-control" id="CommunicationAddressLine1" name="CommunicationAddressLine1" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="CommunicationAddressLine2">Communication Address Line2</label>
+                    <input type="text" class="form-control" id="CommunicationAddressLine2" name="CommunicationAddressLine2" placeholder="Enter email">
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="form-group">
+                    <label for="CommunicationAddressLine3">Communication Address Line3</label>
+                    <input type="text" class="form-control" id="CommunicationAddressLine3" name="CommunicationAddressLine3" placeholder="Enter email">
+                </div>
+            </div>
+            
+        </div>
+       <div class="row">
+        <div class="submitbtn">
+            <button type="submit" class="btn btn-success">Submit</button>
+        </div>
+       </div>
+        
+        
+
+    </form>
+
+  
+
+</body>
+<style>
+    .row{
+        margin-top:20px;
+    }
+    #myForm{
+        padding: 20px;
+    }
+    .submitbtn{
+        display: flex;
+        align-items: center;
+        width: 20px;
+    }
+    ul>li{
+        padding: 5px;
+    }
+</style>
+
+</html>
